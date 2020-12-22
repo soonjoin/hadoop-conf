@@ -17,5 +17,19 @@
 <!-- Put site-specific property overrides in this file. -->
 
 <configuration>
-
+    <!--指定hdfs保存数据的副本数量-->
+    <property>
+      <name>dfs.replication</name>
+      <value>1</value>
+    </property>
+    <!--指定hdfs中namenode的存储位置-->
+    <property>
+      <name>dfs.namenode.name.dir</name> 
+      <value>file:/var/lib/hadoop/hdfs/name</value>
+    </property>
+    <!--指定hdfs中datanode的存储位置-->
+    <property>
+      <name>dfs.datanode.data.dir</name>
+      <value>file:/var/lib/hadoop/hdfs/data</value>
+    </property>
 </configuration>

@@ -17,4 +17,9 @@
 <!-- Put site-specific property overrides in this file. -->
 
 <configuration>
+   <!--指定namenode的地址-->
+   <property>
+    <name>fs.defaultFS</name>
+    <value>hdfs://hadoop-a:8020</value>
+   </property>
 </configuration>
